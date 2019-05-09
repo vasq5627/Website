@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link  href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+       <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <style>
+          html{
+              scroll-behavior: smooth;
+
+          }
+      body {
+    font-family: Roboto;
+    margin: 0;
+   background-color:#6B7A8F;
+  
+          
+}
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    margin:0 auto;
+    padding: 0 3rem;
+      
+}
+          
+          .containers {
+             text-align: center;
+              position:absolute;
+              top:50px;
+              left:50px;
+              width: 100%;
+              
+              
+          }
+          
+          .containers span{
+                color:white;
+              
+              display: inline;
+              height:80px;
+          }
+          .text1{
+           font-size: 60px;
+              font-weight:700;
+              color: white;
+              letter-spacing: 8px;
+              margin-bottom: 30px;
+              position: relative;
+              animation: text 3s 1;
+              background-color:#6B7A8F;
+          }
+          
+          .text2{
+              font-size:20px;
+              color:#6ab;
+              
+          }
+          
+          @keyframes text {
+              0%{
+                  color:black;
+                  margin-bottom: -40px;
+                  
+              }
+              30%{
+              letter-spacing: 25px;
+              margin-bottom: -40px;
+              }
+              85%{
+              letter-spacing: 8px;
+              margin-bottom: -40px;
+              }
+          }
+
+@media screen and (max-width:580px){
+    .container{
+    padding: 0 2rem;    
+    }
+    
+    .containers{
+    padding: 0 2rem;    
+    }
+    
+    
+
+}
+          
+          .contact-form {
+             width: 85%;
+              max-width: 600px;
+              position: absolute;
+              top: 380%;
+              left: 50%;
+              background:#243665;
+              transform: translate(-50%,-50%);
+              padding: 30px 40px;
+              box-sizing: border-box;
+              border-radius: 20px;
+              text-align: center;
+              box-shadow: 0 0 20px #000000b3;
+              
+          }
+          .contact-form h1{
+              margin-top:0;
+              font-weight: 200;
+          }
+          
+          .txtb{
+              border:5px solid #6B7A8F;
+              margin: 8px 0;
+              padding: 12px 18px;
+              border-radius: 8px;
+          }
+          .txtb label{
+              display:block;
+              text-align: left;
+              color:white;
+              text-transform: uppercase;
+              font-size: 14px;
+              
+          }
+          .txtb input,.txtb textarea{
+              width:100%;
+              border:none;
+              background:#6B7A8F;
+              outline:none;
+              font-size:18px;
+              margin-top:6px;
+              
+          }
+          .btn{
+              display:block;
+              padding: 10px 0;
+              background: white;
+              color:white;
+              text-transform: uppercase;
+              cursor:pointer;
+              margin-top:8px;
+              width: 100%;
+          }
+
+h1,h2,h3 {
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+h1 {
+font-size: 54px;
+  color:white;
+}
+
+h2 {
+    font-size: 42px;
+   color:white;
+}
+
+h3 {
+    font-size:28px;
+    color:white;
+}
+h4 {
+    font-size:20px;
+    color:white;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 20px 0;
+    color: white;
+    line-height: 24px;
+    
+}
+
+img {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 25px;
+}
+
+button {
+    outline: none;
+    border: none;
+    margin: 30px 0;
+    padding: 20px 40px;
+    border-radius: 25px;
+    font-family: Roboto;
+    color: #282627;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition:0.8s;
+    
+}
+          
+.btn3::before {
+top:0;
+    border-radius: 0 0 50% 50%;
+ }
+          .btn3::before{
+              height:180;
+          }
+          .btn:hover::before{
+              height:0%;
+          }
+
+i{
+    font-size: 42;
+    letter-spacing: 14px;
+    
+}
+
+nav {
+    height: 60px;
+    width:100%;
+    background-color:#e1e8f0;
+    position:fixed;
+    
+    
+}
+          
+          
+
+nav ul{
+padding:10px 0 0 0;
+margin:0;
+    
+}
+
+nav li{
+    display: inline;
+    float:left;
+    
+}
+
+nav a {
+    display:inline-block;
+    width: 300px;
+    font-weight: 700;
+    text-align:center;
+    text-decoration: none;
+    padding: 20px 0;
+    color:  #243665;
+    transition: 1s;
+    
+    
+}
+
+nav a:hover{
+    color: #243665;
+}
+nav a#toggle-btn {
+    display: none;
+}
+
+@media screen and (max-width: 580px){
+nav {
+    height:auto;
+    border-bottom: 0;
+    
+}
+  
+
+nav ul{
+    display: none;
+    height:auto;
+    
+}
+
+nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+nav a{
+    text-align: left;
+    width:100%;
+    text-indent: 25px;
+    background: #282627;
+    color: white;
+    
+}
+nav a:hover{
+    color: white;
+    
+}
+    
+    nav a#toggle-btn:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+        
+    }
+    
+    nav a#toggle-btn {
+        display: block;
+        background: #282627;
+        color: white;
+        width: 100%;
+        position: relative;
+        
+    }
+    
+    .menu:before, .menu:after {
+        content: "";
+        display: table;
+        
+    }
+    .menu:after{
+        clear:both;
+        
+    }
+    
+    .menu{
+        zoom:1;
+    }
+}
+
+.section-hero{
+    width: 100%;
+    height: 100vh;
+    margin 0;
+    padding: 0;
+    overflow-y: hidden;
+    
+}
+
+.section-hero .container {
+    margin-top: 34vh;
+}
+          .section-hero .containers {
+    margin-top: 34vh;
+}
+
+.section-hero h2 {
+     color: white;
+}
+
+@media screen and (max-width:580px){
+    .section-hero h2 {
+        font-size:24px;
+    }
+    
+    .section-hero p {
+        display: none;
+    }
+}
+          
+#overview {
+   background: #243665;
+    padding: 8rem 0;
+}
+
+.overview-content {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+          .s1{
+              
+              background-size:cover;
+              background-attachment: fixed;
+              width:100%;
+              height:100%;
+              overflow: hidden;
+          }
+          s2{
+               background-size:cover;
+              background-attachment: fixed;
+              width:100%;
+              height:100%;
+              overflow: hidden;
+          }
+
+@media screen and (max-width: 580px) {
+    .overview-content {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+        
+    }
+}
+          
+          .gotopbtn{
+              position: fixed;
+              width: 50px;
+              height: 50px;
+              border-radius: 10px;
+              background: #243665;
+              bottom: 40px;
+              right: 50px;
+              outline: #6B7A8F solid;
+              text-decoration: none;
+              text-align: right; 
+              line-height: 50px;
+              color: white;
+              font-size: 23px;
+              
+          }
+
+#about{
+    padding:8rem 0;
+    
+}
+
+#about h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 12px;
+    margin-bottom: 2em;
+}
+
+#features {
+background: #243665;
+padding:8em 0;
+
+}
+
+.features-content{
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+
+@media screen and (max-width: 580px) {
+    .features-content {
+        display: grid;
+            grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+        
+    }
+}
+        
+#subscribe {
+    background: #6B7A8F;
+    padding:8em 0;
+    
+}
+
+#subscribe h2{
+    color:white;
+}
+
+#subscribe input {
+    width: 80%;
+    margin:2em 0;
+    background: none;
+    border: 1px solid #8d8273;
+    padding:20px;
+    font-family:Roboto;
+    font-weight: 400;
+    color: white;
+    
+    
+}
+
+subscribe input:focus{
+    border:none;
+    outline:none;
+    border:2px solid #8D8273;
+    
+}
+
+input::placeholder {
+ color: white;
+text-transform: uppercase;
+font-weight:400;
+    
+}
+
+footer {
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+    padding: 1em 0;
+    background: #282627;
+}
+
+footer span{
+    
+}
+         
+          
+          ::-webkit-scrollbar{
+              background:#ddd;
+              width:14px;
+          }
+          ::-webkit-scrollbar-track{
+box-shadow: insert 0 0 10px #00000070;
+              border-radius:10px;
+              
+          }
+          
+          ::-webkit-scrollbar-thumb{
+              background: #243665;
+               border-radius:10px;
+          }
+      </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      
+  <header>
+       <nav class="menu">
+      <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#overview">Overview</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#features">Features</a>
+  </li>
+
+          
+</ul>
+       
+        <a href="#" id="toggle-btn">Ruben</a>
+      </nav>  
+    </header>
+      <section class="s1">
+      <a name="home"></a>
+      <div class="section-hero">
+<div class="containers">
+          <span class="text1"><h1>Ruben C. Vasquez</h1></span>
+          <span class="text2"><h2>Aspiring Front-End Engineer </h2></span>
+    <h3><p>Recent College Graduate</p></h3>
+    <h2><i class="fab fa-js" aria-hidden="true"></i> <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i></h2>
+    <button class="btn3"> Resume </button>
+
+          </div>
+      </div>
+      </section>
+      
+    
+      <section class="s2"><a name="overview"></a>
+      <div id="overview" class="section">
+          <div class="container">
+          <div class="overview-content">
+              <div>
+              <h2> overview</h2>
+                  <p>I am a recent graduate from California State University, Monterey Bay. My background is a blend of Computer Science and Psychology. I have an ample amount of technical skills, as well as soft skills. 
+                  </p>
+                  <p>
+                  Programming Languages: Python, JavaScript, Java, C++, HTML/CSS, SQL, R
+                  <br>
+                    Communication Skills: Teamwork, 
+                  </p>
+                  
+                  <button type="button">View More</button>
+              </div>
+              
+              <div>
+                <img src='forest.jpg' alt="">
+                  
+                  
+              </div>
+              </div>
+          </div>
+      </div>
+          </section>
+      
+      <div id="about" class="section">
+      <div class="container">
+          <h2>
+          <i class="fab fa-github"></i> Past Projects
+          </h2>
+          <h3> Projects</h3>
+          <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+          
+       
+          </div>
+      </div>
+      <a name="features"></a>
+      <div id="features" class="section">
+          <div class="container">
+            <div class="features-content">
+                <div>
+                <img src="asd.jpeg" alt="">
+                </div>
+                <div> 
+                <h2> Relevant Course Work </h2>
+                    <p> </p>
+                    <h4>&#10148; Notification</h4>
+                    <p> </p>
+                    <h4>&#10148; Fully Responsive</h4>
+                    <p> sfsefsefsfesefsefsefsfefessefsef</p>
+                    <h4>&#10148; Editable Layout</h4>
+                    <p> sfsefsefsfesefsefsefsfefessefsef</p>
+                </div>
+
+              </div>
+          </div>
+               
+      </div>
+      
+      
+      <a name="download"></a>
+      <div id="subscribe" class="section">
+          
+          <div class="container">
+          <div class="contact-form">
+              <h1>Contact Me</h1>
+              <div class="txtb">
+                  <label>Full Name :</label>
+                  <input type="text" name="" value="" placeholder="Enter Your Name">
+                  
+              </div>
+              <div class="txtb">
+                  <label>Email :</label>
+                  <input type="email" name="" value="" placeholder="Enter Your Email">
+                  
+              </div>
+              <div class="txtb">
+                  <label>Phone Number :</label>
+                  <input type="text" name="" value="" placeholder="Enter Your Phone Number">
+                  
+              </div>
+              <div class="txtb">
+                  <label>Message :</label>
+                  <textarea></textarea>
+                  
+              </div>
+              <a class="btn">Send</a>
+              </div>
+      </div>
+      </div>
+      <script>
+      $(function() {
+    menu = $('nav ul');
+
+    $('#toggle-btn').on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+        
+    });
+    
+    $(window).resize(function() {
+var w = $(this).width();
+        if(w > 580 && menu.is(':hidden')) {
+menu.removeAttr('style');
+        }
+    });
+    
+    $('nav li').on('click', function(e){
+        var w = $(window).width();
+        if(w < 580) {
+            menu.slideToggle();
+            
+        }
+    });
+    $('.open-menu').height($(window).height());
+});
+
+$('a[href*="#"]')
+    .not('[href="#"]')
+    .not('[href="0"]')
+.click(function(event){
+    if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
+    location.hostname == this.hostname
+    
+) {
+       var target = $(this.hash);
+target = target.length ? target : $('[name=]' + this.hash.slice(1) + ']');
+    if(target.length) {
+        evenet.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 100, function() {
+            var $target = $(target);
+            $target.focus();
+            if($target.is(":focus")) {
+                return false;
+            } else {
+                $target.attr('tabindex', '-1');
+                $target.focus();
+            };
+        });
+    }
+    }
+});
+      </script>
+      
+      <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+  </body>
+</html>
